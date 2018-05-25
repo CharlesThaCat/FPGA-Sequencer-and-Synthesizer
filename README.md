@@ -11,5 +11,3 @@ Change Logs
 2018/5/24
 -
 * Upload the program for the implementation of a sequencer using square wave.
-
-=
