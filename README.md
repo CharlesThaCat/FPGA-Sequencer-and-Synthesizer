@@ -14,4 +14,5 @@ Change Logs
 
 2018/5/25
 -
-* Create collaborator messages, add git configurations. And test merge function.
+* Create collaborator messages, add git configurations.
+* Test synchronization and merge function.
