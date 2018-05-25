@@ -1,4 +1,4 @@
-Too young, too simple, sometimes naive!# FPGA-Sequencer-and-Synthesizer
+# FPGA-Sequencer-and-Synthesizer
 
 Introduction
 =
