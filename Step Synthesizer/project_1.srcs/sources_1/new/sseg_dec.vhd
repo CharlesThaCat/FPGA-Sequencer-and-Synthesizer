@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------
--- CPE 133 VHDL File: sseg_dec.vhd
+-- Design name: sseg_dec
 -- Description: Special seven segment display driver;
 --
 --  two special inputs: 
@@ -9,14 +9,6 @@
 --
 --       SIGN: if sign = 1, a minus sign appears in left-most digit
 --             if sign = 0, no minus sign appears
---      
---
--- Author: bryan mealy (12-16-10)
---
--- revisions: 
-------------------------------------------------------------------------
-
------------------------------------------------------------------------
 -----------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -32,8 +24,8 @@ entity sseg_dec is
 					    SIGN : in std_logic;
 						VALID : in std_logic;
                     CLK : in std_logic;
-                DISP_EN : out std_logic_vector(3 downto 0);
-               SEGMENTS : out std_logic_vector(7 downto 0));
+                DISP_EN : out std_logic_vector(3 downto 0); -- output hex number for each digit
+               SEGMENTS : out std_logic_vector(7 downto 0));    -- lighted segments for each digit
 end sseg_dec;
 
 -------------------------------------------------------------

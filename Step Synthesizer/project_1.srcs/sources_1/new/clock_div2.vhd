@@ -1,26 +1,7 @@
 ----------------------------------------------------------------------------------
--- Company: Ratner Engineering
--- Engineer: bryan mealy
--- 
--- Create Date:    15:27:40 12/27/2010 
--- Design Name: 
--- Module Name:    clk_div.vhd
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: This divides the input clock frequency into a slower
---              frequency. The frequency is set by the the MAX_COUNT
---              constant in the declarative region of the architecture. 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
---------------------------------------------------------------------------------
-
------------------------------------------------------------------------
+-- Design Name:clock_div2
+-- Description: divides the input clock frequency into a slower frequency. 
+--              The BPM is set by the the MAX_COUNT constant in the declarative region of the architecture.
 -----------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

@@ -1,19 +1,14 @@
 ----------------------------------------------------------------------------------
--- Create Date: 11/14/2014 
 -- Design Name: SquareWaveGenerator
 -- Description: Generates square wave based on input tone
--- Authors: Joseph Coplon, Lincoln Tran
---
---This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
---You can view a copy of this license here: http://creativecommons.org/licenses/by-nc-sa/4.0/
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity SquareWaveGenerator is
     Port ( clk : in  STD_LOGIC;
-			  note : in STD_LOGIC_VECTOR(2 downto 0);
-			  en : in STD_LOGIC;
+			  note : in STD_LOGIC_VECTOR(2 downto 0);	-- 8 frequencies
+			  en : in STD_LOGIC;	-- enable signal
            speaker : out  STD_LOGIC);
 end SquareWaveGenerator;
 
@@ -28,13 +23,13 @@ begin
 		--select correct frequency based on input note
 		case note is
 			when "000" => max_count := 0; --when input is 000, no square wave should be outputted
-			when "001" => max_count := 113636;
-			when "010" => max_count := 95557;
-			when "011" => max_count := 85131;
-			when "100" => max_Count := 75186;
-			when "101" => max_count := 63776;
-			when "110" => max_count := 56818;
-			when "111" => max_count := 47778;
+			when "001" => max_count := 227272;	-- a
+			when "010" => max_count := 191114;	-- c1
+			when "011" => max_count := 170262;	-- d1
+			when "100" => max_Count := 150372;	-- e1
+			when "101" => max_count := 127552;	-- g1
+			when "110" => max_count := 113636;	-- a1
+			when "111" => max_count := 95556;	-- c2
 			when others =>
 		end case;	
       if (rising_edge(clk)) then   
@@ -46,7 +41,7 @@ begin
          end if; 
       end if; 
       if (en = '1') then 
-			speaker <= tmp_clk; 
+			speaker <= tmp_clk;	-- use divided clock signal as output
 		else
 			speaker <= '0';
 		end if;
