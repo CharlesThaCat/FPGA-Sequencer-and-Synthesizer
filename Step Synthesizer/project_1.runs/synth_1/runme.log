@@ -14,64 +14,64 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8376 
+INFO: Helper process launched with PID 4264 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 338.211 ; gain = 96.156
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 342.816 ; gain = 100.352
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'StepSynthesizerMain' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:26]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/debounce.vhd:27' bound to instance 'Debounce1' of component 'debounce' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:100]
-INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/debounce.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'StepSynthesizerMain' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:21]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/debounce.vhd:27' bound to instance 'Debounce1' of component 'debounce' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/debounce.vhd:36]
 	Parameter counter_size bound to: 19 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/debounce.vhd:36]
-INFO: [Synth 8-3491] module 'PulseGenerator' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/PulseGenerator.vhd:13' bound to instance 'CIncr' of component 'PulseGenerator' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:106]
-INFO: [Synth 8-638] synthesizing module 'PulseGenerator' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/PulseGenerator.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'PulseGenerator' (2#1) [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/PulseGenerator.vhd:19]
-INFO: [Synth 8-3491] module 'TFlopCounter' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/TFlopCounter.vhd:13' bound to instance 'Counter1' of component 'TFlopCounter' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:112]
-INFO: [Synth 8-638] synthesizing module 'TFlopCounter' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/TFlopCounter.vhd:20]
-INFO: [Synth 8-3491] module 'tflipflop' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/tflipflop.vhd:13' bound to instance 'TFlip0' of component 'tflipflop' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/TFlopCounter.vhd:36]
-INFO: [Synth 8-638] synthesizing module 'tflipflop' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/tflipflop.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'tflipflop' (3#1) [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/tflipflop.vhd:21]
-INFO: [Synth 8-3491] module 'tflipflop' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/tflipflop.vhd:13' bound to instance 'TFlip1' of component 'tflipflop' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/TFlopCounter.vhd:41]
-INFO: [Synth 8-3491] module 'tflipflop' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/tflipflop.vhd:13' bound to instance 'TFlip2' of component 'tflipflop' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/TFlopCounter.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'TFlopCounter' (4#1) [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/TFlopCounter.vhd:20]
-INFO: [Synth 8-3491] module 'sseg_dec' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/sseg_dec.vhd:30' bound to instance 'SSegDisplay' of component 'sseg_dec' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'sseg_dec' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/sseg_dec.vhd:42]
-INFO: [Synth 8-3491] module 'bin2bcdconv' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/sseg_dec.vhd:158' bound to instance 'my_conv' of component 'bin2bcdconv' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/sseg_dec.vhd:66]
-INFO: [Synth 8-638] synthesizing module 'bin2bcdconv' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/sseg_dec.vhd:168]
-INFO: [Synth 8-256] done synthesizing module 'bin2bcdconv' (5#1) [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/sseg_dec.vhd:168]
-INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/sseg_dec.vhd:258' bound to instance 'my_clk' of component 'clk_div' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/sseg_dec.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/sseg_dec.vhd:263]
-INFO: [Synth 8-256] done synthesizing module 'clk_div' (6#1) [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/sseg_dec.vhd:263]
-INFO: [Synth 8-226] default block is never used [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/sseg_dec.vhd:124]
-INFO: [Synth 8-226] default block is never used [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/sseg_dec.vhd:132]
-INFO: [Synth 8-256] done synthesizing module 'sseg_dec' (7#1) [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/sseg_dec.vhd:42]
-INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/DFlop3bit.vhd:14' bound to instance 'DFlop0' of component 'DFlop3bit' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:138]
-INFO: [Synth 8-638] synthesizing module 'DFlop3bit' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/DFlop3bit.vhd:25]
-INFO: [Synth 8-256] done synthesizing module 'DFlop3bit' (8#1) [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/DFlop3bit.vhd:25]
-INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/DFlop3bit.vhd:14' bound to instance 'DFlop1' of component 'DFlop3bit' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:144]
-INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/DFlop3bit.vhd:14' bound to instance 'DFlop2' of component 'DFlop3bit' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:150]
-INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/DFlop3bit.vhd:14' bound to instance 'DFlop3' of component 'DFlop3bit' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:156]
-INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/DFlop3bit.vhd:14' bound to instance 'DFlop4' of component 'DFlop3bit' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:162]
-INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/DFlop3bit.vhd:14' bound to instance 'DFlop5' of component 'DFlop3bit' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:168]
-INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/DFlop3bit.vhd:14' bound to instance 'DFlop6' of component 'DFlop3bit' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:174]
-INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/DFlop3bit.vhd:14' bound to instance 'DFlop7' of component 'DFlop3bit' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:180]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/debounce.vhd:27' bound to instance 'Debounce2' of component 'debounce' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:188]
-INFO: [Synth 8-3491] module 'ButtonToggle' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/ButtonDebouncer.vhd:13' bound to instance 'PlayToggle' of component 'ButtonToggle' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:194]
-INFO: [Synth 8-638] synthesizing module 'ButtonToggle' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/ButtonDebouncer.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'ButtonToggle' (9#1) [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/ButtonDebouncer.vhd:20]
-INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/clock_div2.vhd:32' bound to instance 'ClockDivider' of component 'clk_div2' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:201]
-INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/clock_div2.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'clk_div2' (10#1) [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/clock_div2.vhd:37]
-INFO: [Synth 8-3491] module 'TFlopCounter' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/TFlopCounter.vhd:13' bound to instance 'Counter2' of component 'TFlopCounter' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:206]
-INFO: [Synth 8-226] default block is never used [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:215]
-INFO: [Synth 8-226] default block is never used [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:234]
-INFO: [Synth 8-3491] module 'SquareWaveGenerator' declared at 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/SquareWaveGenerator.vhd:13' bound to instance 'SpeakerPlay' of component 'SquareWaveGenerator' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:249]
-INFO: [Synth 8-638] synthesizing module 'SquareWaveGenerator' [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/SquareWaveGenerator.vhd:20]
-INFO: [Synth 8-226] default block is never used [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/SquareWaveGenerator.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'SquareWaveGenerator' (11#1) [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/SquareWaveGenerator.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'StepSynthesizerMain' (12#1) [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/debounce.vhd:36]
+INFO: [Synth 8-3491] module 'PulseGenerator' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/PulseGenerator.vhd:8' bound to instance 'CIncr' of component 'PulseGenerator' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'PulseGenerator' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/PulseGenerator.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'PulseGenerator' (2#1) [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/PulseGenerator.vhd:14]
+INFO: [Synth 8-3491] module 'TFlopCounter' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/TFlopCounter.vhd:9' bound to instance 'Counter1' of component 'TFlopCounter' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'TFlopCounter' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/TFlopCounter.vhd:16]
+INFO: [Synth 8-3491] module 'tflipflop' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/tflipflop.vhd:8' bound to instance 'TFlip0' of component 'tflipflop' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/TFlopCounter.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'tflipflop' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/tflipflop.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'tflipflop' (3#1) [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/tflipflop.vhd:16]
+INFO: [Synth 8-3491] module 'tflipflop' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/tflipflop.vhd:8' bound to instance 'TFlip1' of component 'tflipflop' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/TFlopCounter.vhd:37]
+INFO: [Synth 8-3491] module 'tflipflop' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/tflipflop.vhd:8' bound to instance 'TFlip2' of component 'tflipflop' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/TFlopCounter.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'TFlopCounter' (4#1) [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/TFlopCounter.vhd:16]
+INFO: [Synth 8-3491] module 'sseg_dec' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/sseg_dec.vhd:22' bound to instance 'SSegDisplay' of component 'sseg_dec' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'sseg_dec' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/sseg_dec.vhd:34]
+INFO: [Synth 8-3491] module 'bin2bcdconv' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/sseg_dec.vhd:150' bound to instance 'my_conv' of component 'bin2bcdconv' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/sseg_dec.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'bin2bcdconv' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/sseg_dec.vhd:160]
+INFO: [Synth 8-256] done synthesizing module 'bin2bcdconv' (5#1) [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/sseg_dec.vhd:160]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/sseg_dec.vhd:250' bound to instance 'my_clk' of component 'clk_div' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/sseg_dec.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/sseg_dec.vhd:255]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (6#1) [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/sseg_dec.vhd:255]
+INFO: [Synth 8-226] default block is never used [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/sseg_dec.vhd:116]
+INFO: [Synth 8-226] default block is never used [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/sseg_dec.vhd:124]
+INFO: [Synth 8-256] done synthesizing module 'sseg_dec' (7#1) [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/sseg_dec.vhd:34]
+INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/DFlop3bit.vhd:9' bound to instance 'DFlop0' of component 'DFlop3bit' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'DFlop3bit' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/DFlop3bit.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'DFlop3bit' (8#1) [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/DFlop3bit.vhd:20]
+INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/DFlop3bit.vhd:9' bound to instance 'DFlop1' of component 'DFlop3bit' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:141]
+INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/DFlop3bit.vhd:9' bound to instance 'DFlop2' of component 'DFlop3bit' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:147]
+INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/DFlop3bit.vhd:9' bound to instance 'DFlop3' of component 'DFlop3bit' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:153]
+INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/DFlop3bit.vhd:9' bound to instance 'DFlop4' of component 'DFlop3bit' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:159]
+INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/DFlop3bit.vhd:9' bound to instance 'DFlop5' of component 'DFlop3bit' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:165]
+INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/DFlop3bit.vhd:9' bound to instance 'DFlop6' of component 'DFlop3bit' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:171]
+INFO: [Synth 8-3491] module 'DFlop3bit' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/DFlop3bit.vhd:9' bound to instance 'DFlop7' of component 'DFlop3bit' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:177]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/debounce.vhd:27' bound to instance 'Debounce2' of component 'debounce' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:187]
+INFO: [Synth 8-3491] module 'ButtonToggle' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/ButtonDebouncer.vhd:8' bound to instance 'PlayToggle' of component 'ButtonToggle' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'ButtonToggle' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/ButtonDebouncer.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ButtonToggle' (9#1) [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/ButtonDebouncer.vhd:15]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/clock_div2.vhd:13' bound to instance 'ClockDivider' of component 'clk_div2' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/clock_div2.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (10#1) [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/clock_div2.vhd:18]
+INFO: [Synth 8-3491] module 'TFlopCounter' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/TFlopCounter.vhd:9' bound to instance 'Counter2' of component 'TFlopCounter' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:205]
+INFO: [Synth 8-226] default block is never used [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:216]
+INFO: [Synth 8-226] default block is never used [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:235]
+INFO: [Synth 8-3491] module 'SquareWaveGenerator' declared at 'C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/SquareWaveGenerator.vhd:8' bound to instance 'SpeakerPlay' of component 'SquareWaveGenerator' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:250]
+INFO: [Synth 8-638] synthesizing module 'SquareWaveGenerator' [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/SquareWaveGenerator.vhd:15]
+INFO: [Synth 8-226] default block is never used [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/SquareWaveGenerator.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'SquareWaveGenerator' (11#1) [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/SquareWaveGenerator.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'StepSynthesizerMain' (12#1) [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:21]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 389.457 ; gain = 147.402
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 396.012 ; gain = 153.547
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -81,48 +81,48 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 389.457 ; gain = 147.402
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 396.012 ; gain = 153.547
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/constrs_1/new/xdc_StepSynthesizerMain.xdc]
-Finished Parsing XDC File [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/constrs_1/new/xdc_StepSynthesizerMain.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/constrs_1/new/xdc_StepSynthesizerMain.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/StepSynthesizerMain_propImpl.xdc].
+Parsing XDC File [C:/Users/Desktop/Step Synthesizer/project_1.srcs/constrs_1/new/xdc_StepSynthesizerMain.xdc]
+Finished Parsing XDC File [C:/Users/Desktop/Step Synthesizer/project_1.srcs/constrs_1/new/xdc_StepSynthesizerMain.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Desktop/Step Synthesizer/project_1.srcs/constrs_1/new/xdc_StepSynthesizerMain.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/StepSynthesizerMain_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/StepSynthesizerMain_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 730.887 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 741.109 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 730.887 ; gain = 488.832
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 741.109 ; gain = 498.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 730.887 ; gain = 488.832
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 741.109 ; gain = 498.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 730.887 ; gain = 488.832
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 741.109 ; gain = 498.645
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element counter_out_reg was removed.  [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/debounce.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element counter_out_reg was removed.  [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/debounce.vhd:50]
 INFO: [Synth 8-5544] ROM "MMSD_OUT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "tmp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "div_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "tmp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "div_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element div_cnt_reg was removed.  [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/SquareWaveGenerator.vhd:41]
+WARNING: [Synth 8-6014] Unused sequential element div_cnt_reg was removed.  [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/SquareWaveGenerator.vhd:36]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 730.887 ; gain = 488.832
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 741.109 ; gain = 498.645
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -150,7 +150,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 13    
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
-	   8 Input     18 Bit        Muxes := 1     
+	   8 Input     19 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 19    
 	   9 Input      8 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 7     
@@ -250,7 +250,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   8 Input     18 Bit        Muxes := 1     
+	   8 Input     19 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -270,11 +270,11 @@ INFO: [Synth 8-5545] ROM "SSegDisplay/my_clk/div_cnt" won't be mapped to RAM bec
 INFO: [Synth 8-5545] ROM "SSegDisplay/my_clk/tmp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "ClockDivider/div_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "ClockDivider/tmp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element Debounce1/counter_out_reg was removed.  [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/debounce.vhd:50]
-WARNING: [Synth 8-6014] Unused sequential element Debounce2/counter_out_reg was removed.  [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/debounce.vhd:50]
-WARNING: [Synth 8-6014] Unused sequential element SpeakerPlay/div_cnt_reg was removed.  [C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.srcs/sources_1/new/SquareWaveGenerator.vhd:41]
+WARNING: [Synth 8-6014] Unused sequential element Debounce1/counter_out_reg was removed.  [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/debounce.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Debounce2/counter_out_reg was removed.  [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/debounce.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element SpeakerPlay/div_cnt_reg was removed.  [C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/SquareWaveGenerator.vhd:36]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 730.887 ; gain = 488.832
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 741.109 ; gain = 498.645
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -286,13 +286,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 741.043 ; gain = 498.988
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 741.109 ; gain = 498.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 741.230 ; gain = 499.176
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 741.109 ; gain = 498.645
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -304,7 +304,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 762.047 ; gain = 519.992
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 756.367 ; gain = 513.902
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -328,7 +328,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 762.047 ; gain = 519.992
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 756.367 ; gain = 513.902
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -341,7 +341,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 762.047 ; gain = 519.992
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 756.367 ; gain = 513.902
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -353,25 +353,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 762.047 ; gain = 519.992
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 756.367 ; gain = 513.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 762.047 ; gain = 519.992
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 756.367 ; gain = 513.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 762.047 ; gain = 519.992
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 756.367 ; gain = 513.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 762.047 ; gain = 519.992
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 756.367 ; gain = 513.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -392,8 +392,8 @@ Report Cell Usage:
 |3     |LUT1   |     6|
 |4     |LUT2   |    27|
 |5     |LUT3   |     2|
-|6     |LUT4   |    43|
-|7     |LUT5   |    31|
+|6     |LUT4   |    45|
+|7     |LUT5   |    29|
 |8     |LUT6   |    16|
 |9     |MUXF7  |     3|
 |10    |FDCE   |    30|
@@ -413,9 +413,9 @@ Report Instance Areas:
 |5     |    TFlip0     |tflipflop_11        |     5|
 |6     |    TFlip1     |tflipflop_12        |     2|
 |7     |    TFlip2     |tflipflop_13        |     5|
-|8     |  Counter2     |TFlopCounter_0      |    40|
+|8     |  Counter2     |TFlopCounter_0      |    38|
 |9     |    TFlip0     |tflipflop           |     2|
-|10    |    TFlip1     |tflipflop_9         |    37|
+|10    |    TFlip1     |tflipflop_9         |    35|
 |11    |    TFlip2     |tflipflop_10        |     1|
 |12    |  DFlop0       |DFlop3bit           |     6|
 |13    |  DFlop1       |DFlop3bit_1         |     6|
@@ -430,14 +430,14 @@ Report Instance Areas:
 |22    |  PlayToggle   |ButtonToggle        |     6|
 |23    |  SSegDisplay  |sseg_dec            |    60|
 |24    |    my_clk     |clk_div             |    52|
-|25    |  SpeakerPlay  |SquareWaveGenerator |    61|
+|25    |  SpeakerPlay  |SquareWaveGenerator |    63|
 +------+---------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 762.047 ; gain = 519.992
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 756.367 ; gain = 513.902
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 762.047 ; gain = 178.563
-Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 762.047 ; gain = 519.992
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 756.367 ; gain = 168.805
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 756.367 ; gain = 513.902
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -449,8 +449,8 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 72 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 764.945 ; gain = 534.605
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Charles Lin/Documents/digital_system_design_project/project_1/project_1.runs/synth_1/StepSynthesizerMain.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 759.141 ; gain = 529.539
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Desktop/Step Synthesizer/project_1.runs/synth_1/StepSynthesizerMain.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file StepSynthesizerMain_utilization_synth.rpt -pb StepSynthesizerMain_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 764.945 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu May 17 20:11:34 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 759.141 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun May 27 22:12:36 2018...
