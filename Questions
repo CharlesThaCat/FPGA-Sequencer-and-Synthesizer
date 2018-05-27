@@ -1,0 +1,36 @@
+sseg_dec.vhd:
+1. 
+
+SquareWaveGenerator.vhd
+(SOLVED)1. 不同note的分频max_count对应的是？改成100MHz的
+ANS: 写在了程序注释里
+
+PulseGenerator.vhd:
+1. 这个文件用在哪？
+(SOLVED)2. 每当clk上升沿来的时候，q都置0。得以进入一次if之后，incr_prev为1，不就不再可能进入if让q为1了吗？
+ANS: 没错。这个vhd的作用在作者的文档中有说明。For some functions, such as incrementing the frequency when pressing the button to change the current tone,
+we might want to increment a counter only once with each button press. This requires taking an input and converting it to a pulse with a duration of 
+exactly one clock cycle.
+
+ButtonDebouncer.vhd:
+(SOLVED)1. 输出的Q是用来干嘛的？
+
+clock_div2.vhd:
+(SOLVED)1. 这个输出的dividor用在哪？
+
+TFlopCounter.vhd:
+(SOLVED)1. 只是用来存tone吗？有没有用来存哪个switch对应哪个tone？
+(SOLVED)2. 为什么要用T触发器呢？
+ANS: 因为T触发器的触发信号只有T一个，相比JK和SR逻辑功能更简单。而且T触发器的Q*会考虑当前的Q，符合实际情况；而不像D触发器那样Q*只由触发信号D决定。
+(SOLVED)3. 这个vhd用在哪？
+(SOLVED)4. 使能之后T触发器是自动往上加的吗？
+(SOLVED)5. T触发器往上加的速度就是BPM，这么说T触发器到底是用来存什么的呢？用来存这个时间点轮到哪个switch发出声音？主程序中Counter1 T触发器和Counter 2 T触发器的作用分别是什么？
+ANS:Counter 2 T触发器用来存这个时间点轮到哪个switch发出声音，所以它往上加的速度就是BPM；Counter 1 T触发器用来keep track tone，就是记得上一个increment之后的tone是什么，
+这一次increment的tone应该变成什么。所以储存每个switch对应的tone的D触发器会用Counter 1 T触发器存储的数值作为输入；LED灯和Multiplexer会用Counter 2 T触发器存储的数值作为输入。
+主程序最后的multiplexer，以QOut和CurrNote为sensitivity list，作用就是当时间进行到某个switch（CurrNote）时，选择对应的tone frequency（QOut）作为CurrTone。QOut是Counter1 T触发器的输出
+CurrNote是Counter2 T触发器的输出。
+
+DFkop2bit.vhd:
+(SOLVED)1. 和TFlopCounter.vhd有什么不一样？
+ANS: D触发器用来存储每个switch对应的tone，是8个可能的tone frequencies中的1个固定的数值；Counter 1 T触发器用来keep track tone，就是记得上一个increment之后的tone是什么，
+这一次increment的tone应该变成什么，所以才要用3个T触发器，低位的为1之后高位的才能变。

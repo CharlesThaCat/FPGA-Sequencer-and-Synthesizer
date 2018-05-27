@@ -1,11 +1,6 @@
 ----------------------------------------------------------------------------------
--- Create Date: 11/24/2014 
 -- Design Name: PulseGenerator
 -- Description: Outputs a one clock cycle pulse when its input goes from low to high
--- Authors: Joseph Coplon, Lincoln Tran
---
---This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
---You can view a copy of this license here: http://creativecommons.org/licenses/by-nc-sa/4.0/
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

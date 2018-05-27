@@ -1,26 +1,21 @@
 ----------------------------------------------------------------------------------
--- Create Date: 11/19/2014 
 -- Design Name: StepSynthesizerMain
 -- Description: Main file for step synthesizer project
--- Authors: Joseph Coplon, Lincoln Tran
---
---This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
---You can view a copy of this license here: http://creativecommons.org/licenses/by-nc-sa/4.0/
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity StepSynthesizerMain is
-    Port ( Clk : in  STD_LOGIC; --clock
-			  Switch : in  STD_LOGIC_VECTOR (7 downto 0); --represents each switch on the nexys board
-           FreqIncr : in  STD_LOGIC; --button 1, switches between different frequencies/tones
-           Save : in  STD_LOGIC; --button 2, saves current tone to all beats with their switches flipped
-           PlayPause : in  STD_LOGIC; --button 3, toggles between play and pause
-           Reset : in  STD_LOGIC; --button 4, resets all notes
-           LEDSegment : out  STD_LOGIC_VECTOR (7 downto 0); --led segments on seven segment display
-           Display : out  STD_LOGIC_VECTOR (3 downto 0); --determines which of the four seven segment displays to turn on
-			  LEDNote : out STD_LOGIC_VECTOR (7 downto 0); --leds above the switches, representing which beat is currently being played
-			  Speaker : out STD_LOGIC); --output to the speaker
+    Port ( 	Clk : in  STD_LOGIC; --clock
+			Switch : in  STD_LOGIC_VECTOR (7 downto 0); --represents each switch on the nexys board
+           	FreqIncr : in  STD_LOGIC; --button 1, switches between different frequencies/tones
+           	Save : in  STD_LOGIC; --button 2, saves current tone to all beats with their switches flipped on
+           	PlayPause : in  STD_LOGIC; --button 3, toggles between play and pause
+           	Reset : in  STD_LOGIC; --button 4, resets all notes
+           	LEDSegment : out  STD_LOGIC_VECTOR (7 downto 0); --led segments on seven segment display (cathode)
+           	Display : out  STD_LOGIC_VECTOR (3 downto 0); --determines which of the four seven segment displays to turn on (anode)
+			LEDNote : out STD_LOGIC_VECTOR (7 downto 0); --leds above the switches, representing which beat is currently being played
+			Speaker : out STD_LOGIC); --output to the speaker
 end StepSynthesizerMain;
 
 architecture Structural of StepSynthesizerMain is
@@ -96,6 +91,8 @@ begin
 	end loop;
 end process;
 
+
+--------------------------- Incrementing Frequency ----------------------------------
 --debounces button 1
 Debounce1 : debounce port map (
 	clk => Clk,
@@ -184,6 +181,8 @@ DFlop7 : DFlop3bit port map (
 	d => DInp,
 	q => QOut(7));
 
+
+--------------------------- Toggling PlayPause ----------------------------------
 --debounces the input from button 3
 Debounce2 : debounce port map (
 	clk => Clk,
@@ -210,6 +209,8 @@ Counter2 : TFlopCounter port map (
 	Tnum => CurrNote);
 
 --multiplexer which selects which note to play based on the current beat
+--CurrNote represents which switch to be played
+--CurrTone represents which tone to be played on a certain switch
 select_note : process (QOut,CurrNote)
 begin
 	case CurrNote is

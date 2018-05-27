@@ -1,11 +1,6 @@
 ----------------------------------------------------------------------------------
--- Create Date: 11/14/2014 
 -- Design Name: DFlop3Bit
 -- Description: D flip-flop which stores 3-bits
--- Authors: Joseph Coplon, Lincoln Tran
---
---This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
---You can view a copy of this license here: http://creativecommons.org/licenses/by-nc-sa/4.0/
 ----------------------------------------------------------------------------------
 
 library IEEE;
