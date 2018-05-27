@@ -27,5 +27,4 @@ Supporting Materials
 * http://www.instructables.com/id/8-Step-FPGA-Sequencer-and-Synthesizer/
 * This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. You can view a copy of this license here: http://creativecommons.org/licenses/by-nc-sa/4.0/
 * Frequencies for equal-tempered scale, http://pages.mtu.edu/~suits/notefreqs.html
-* Debounce Logic Circuit, https://www.eewiki.net/display/LOGIC/Debounce+Logic+Circuit+%28with+VHDL+example%29 
-* 【Quin】黑暗之魂3 一周目攻略 Part21 古龙顶端【机核网】，https://www.bilibili.com/video/av22872801?from=search&seid=11604274902829114459
+* Debounce Logic Circuit, https://www.eewiki.net/display/LOGIC/Debounce+Logic+Circuit+%28with+VHDL+example%29
