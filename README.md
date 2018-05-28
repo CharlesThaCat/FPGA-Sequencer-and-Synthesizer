@@ -19,7 +19,7 @@ Change Logs
 
 2018/5/27
 -
-* Correct the frequencies in SquareWaveGenerator.vhd
+* Correct the frequencies in #SquareWaveGenerator.vhd#
 * Clarify the logic of the whole circuit and program, add some comments on the program to increase its readability.
 
 Supporting Materials
