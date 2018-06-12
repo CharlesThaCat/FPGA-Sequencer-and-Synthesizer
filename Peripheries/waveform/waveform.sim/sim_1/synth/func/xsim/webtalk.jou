@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jun 11 21:33:55 2018
+# Process ID: 19912
+# Current directory: C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.sim/sim_1/synth/func/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.sim/sim_1/synth/func/xsim/xsim.dir/sine_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.sim/sim_1/synth/func/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.sim/sim_1/synth/func/xsim/xsim.dir/sine_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace

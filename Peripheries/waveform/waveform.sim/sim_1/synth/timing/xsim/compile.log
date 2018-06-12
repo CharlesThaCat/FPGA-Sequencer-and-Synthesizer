@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.sim/sim_1/synth/timing/xsim/sine_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sine_wave
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/sine_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sine_tb

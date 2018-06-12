@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"sine_tb_func_synth.vhd" \
+"../../../../../../sine_tb.vhd" \
+
+# Do not sort compile order
+nosort
