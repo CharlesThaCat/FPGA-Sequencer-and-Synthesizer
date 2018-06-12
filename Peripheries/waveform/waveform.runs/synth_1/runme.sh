@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log sine_wave.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sine_wave.tcl
+EAStep vivado -log pwm_sine.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pwm_sine.tcl

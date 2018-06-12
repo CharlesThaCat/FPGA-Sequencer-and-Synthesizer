@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1528727096">
-  <File Type="PA-TCL" Name="sine_wave.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="sine_wave_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="sine_wave_reports.tcl"/>
-  <File Type="RDS-RDS" Name="sine_wave.vds"/>
-  <File Type="RDS-UTIL" Name="sine_wave_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="sine_wave_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="sine_wave.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="sine_wave_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="sine_wave_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1528802701">
+  <File Type="PA-TCL" Name="pwm_sine.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="pwm_sine_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="pwm_sine_reports.tcl"/>
+  <File Type="RDS-RDS" Name="pwm_sine.vds"/>
+  <File Type="RDS-UTIL" Name="pwm_sine_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="pwm_sine_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="pwm_sine.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="pwm_sine_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="pwm_sine_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/pwm.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../sine_wave.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/pwm.vhd">
+    <File Path="$PSRCDIR/sources_1/new/pwm_sine.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="sine_wave"/>
+      <Option Name="TopModule" Val="pwm_sine"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -43,9 +48,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

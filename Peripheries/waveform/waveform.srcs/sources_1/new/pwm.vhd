@@ -34,33 +34,33 @@ use IEEE.NUMERIC_STD.ALL;
 entity pwm is
     Port ( clk_pwm : in STD_LOGIC;
            pwm_in : in STD_LOGIC_VECTOR (7 downto 0);
+           pwm_th : out std_logic_vector (15 downto 0);
            pwm_out : out STD_LOGIC);
 end pwm;
 
 architecture Behavioral of pwm is
-signal counter : UNSIGNED (9 downto 0) := (others=>'0');
-signal threshold : UNSIGNED (9 downto 0) := (others=>'0');
+signal EN : STD_LOGIC;
+signal counter, counter_next : UNSIGNED (9 downto 0) := (others=>'0');
+signal threshold : UNSIGNED (15 downto 0) := (others=>'0');
 
 begin
 
-process(clk_pwm)
+process(clk_pwm, pwm_in)
 begin
     if rising_edge(clk_pwm) then
-        if counter = 1000 then
-            counter <= (others=>'0');
-        elsif counter = 0 then
-            threshold <= UNSIGNED(pwm_in) * 1000 / 255;
-            counter <= counter + 1;
-        else
-            if counter < threshold then
-                pwm_out <= '1';
-            else
-                pwm_out <= '0';
-            end if;
+        if counter = 0 then -- calculate duty period, pwm(0 to 256) to (0 to 1024)
+            threshold <= unsigned(pwm_in) * 4;
         end if;
+
+        if counter < threshold then -- assign the output value due to counter index
+            pwm_out <= '1';
+        else
+            pwm_out <= '0';
+        end if;
+        counter <= counter_next;
     end if;
 end process;
-
-            
+counter_next <= counter +1 when counter < 1023 else (others=>'0');
+pwm_th <= std_logic_vector(threshold);
 
 end Behavioral;

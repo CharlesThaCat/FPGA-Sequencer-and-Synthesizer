@@ -4,6 +4,7 @@ Dec 15 2017
 21:07:18
 C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/sine_tb.vhd,1528730443,vhdl,,,,sine_tb,,,,,,,,
 C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/sine_wave.vhd,1528730243,vhdl,,,,sine_wave,,,,,,,,
-C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sim_1/new/sine_pwm_tb.vhd,1528729949,vhdl,,,,sine_pwm_tb,,,,,,,,
-C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sources_1/new/pwm.vhd,1528730276,vhdl,,,,pwm,,,,,,,,
-C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sources_1/new/pwm_sine.vhd,1528730538,vhdl,,,,pwm_sine,,,,,,,,
+C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sim_1/new/pwm_tb.vhd,1528802429,vhdl,,,,pwm_tb,,,,,,,,
+C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sim_1/new/sine_pwm_tb.vhd,1528774788,vhdl,,,,sine_pwm_tb,,,,,,,,
+C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sources_1/new/pwm.vhd,1528802339,vhdl,,,,pwm,,,,,,,,
+C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sources_1/new/pwm_sine.vhd,1528775441,vhdl,,,,pwm_sine,,,,,,,,

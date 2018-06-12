@@ -1,3 +1,11 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.sim/sim_1/impl/timing/xsim/sine_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.sim/sim_1/impl/timing/xsim/sine_pwm_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module pwm_sine
 INFO: [VRFC 10-311] analyzing module sine_wave
 INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sim_1/new/sine_pwm_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sine_pwm_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/sine_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sine_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sim_1/new/pwm_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pwm_tb
