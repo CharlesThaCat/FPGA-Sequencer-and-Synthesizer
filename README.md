@@ -15,3 +15,7 @@ Change Logs
 2018/5/25
 -
 * Create collaborator messages, add git configurations. And test merge function.
+
+2018/6/11
+-
+* Sine wave generator in peripheries.
