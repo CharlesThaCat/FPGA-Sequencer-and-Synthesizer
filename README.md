@@ -19,3 +19,4 @@ Change Logs
 2018/6/11
 -
 * Sine wave generator in peripheries.
+* PWM encoder in peripheries, combined with sine wave generator.
