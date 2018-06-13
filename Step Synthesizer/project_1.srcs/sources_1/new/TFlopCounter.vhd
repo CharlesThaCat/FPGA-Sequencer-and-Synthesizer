@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Design Name: TFlopCounter
--- Description: 3-bit counter using flip-flops
+-- Description: 4-bit counter using flip-flops
 --				used to keep track of the current tone
 ----------------------------------------------------------------------------------
 library IEEE;
@@ -10,7 +10,7 @@ entity TFlopCounter is
     Port ( Enable : in  STD_LOGIC;
               Clk : in  STD_LOGIC;
 			  Rst : in STD_LOGIC;
-		     Tnum : out STD_LOGIC_VECTOR (2 downto 0));
+		     Tnum : out STD_LOGIC_VECTOR (3 downto 0));
 end TFlopCounter;
 
 architecture Structural of TFlopCounter is
@@ -25,7 +25,9 @@ architecture Structural of TFlopCounter is
 signal t0 : std_logic;
 signal t1 : std_logic;
 signal t2 : std_logic;
+signal t3 : std_logic;
 signal t01 : std_logic;  
+signal t02: std_logic;
 
 begin
 	-- use T flip-flop to store a 3 bit number. Each filp-flop represents 1 bit being stored.
@@ -45,7 +47,14 @@ begin
 										  T => t01, --third flip-flop toggles when the two lower flip-flops are high
 										  CLK => Clk,
 										  Q => t2);	
+	t02 <= t01 and t2;	-- only when t0 and t1 and t2 equal to 1 at the same time should the t02 becomes 1
+	TFlip3 : tflipflop port map(EN => Enable,
+										  RST => Rst,
+										  T => t02, --fourth flip-flop toggles when the three lower flip-flops are high
+										  CLK => Clk,
+										  Q => t3);
 	tnum(0) <= t0;
 	tnum(1) <= t1;
 	tnum(2) <= t2;
+	tnum(3) <= t3;
 end Structural;

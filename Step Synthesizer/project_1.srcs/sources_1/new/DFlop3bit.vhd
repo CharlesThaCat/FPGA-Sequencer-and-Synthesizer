@@ -12,8 +12,8 @@ entity DFlop3bit is
      clk : in std_logic;
 	  reset : in std_logic;
      en  : in std_logic;
-     d : in std_logic_vector(2 downto 0);
-     q : out std_logic_vector(2 downto 0)
+     d : in std_logic_vector(3 downto 0);
+     q : out std_logic_vector(3 downto 0)
    );
 end entity DFlop3bit;
 
@@ -22,7 +22,7 @@ begin
    process (clk, reset, en) is
    begin
 	 if (reset = '1') then
-		 q <= "000"; --reset output to 000 on reset
+		 q <= "0000"; --reset output to 000 on reset
     elsif (rising_edge(clk)) then
 		if (en = '1') then
         q <= d; --update output when enable is true

@@ -34,3 +34,8 @@ DFkop2bit.vhd:
 (SOLVED)1. 和TFlopCounter.vhd有什么不一样？
 ANS: D触发器用来存储每个switch对应的tone，是8个可能的tone frequencies中的1个固定的数值；Counter 1 T触发器用来keep track tone，就是记得上一个increment之后的tone是什么，
 这一次increment的tone应该变成什么，所以才要用3个T触发器，低位的为1之后高位的才能变。
+
+改成16个时序需要做什么？
+1. 增加Counter 2 T触发器至16个
+2. LED和Multiplexer也要变
+3. CurrNote要

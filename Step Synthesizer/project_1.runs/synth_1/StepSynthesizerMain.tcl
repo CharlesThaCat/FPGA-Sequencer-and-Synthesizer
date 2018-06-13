@@ -16,6 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -35,7 +36,7 @@ read_vhdl -library xil_defaultlib {
   {C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/TFlopCounter.vhd}
   {C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/clock_div2.vhd}
   {C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/debounce.vhd}
-  {C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/sseg_dec.vhd}
+  {C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/seven_segment_display.vhd}
   {C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/tflipflop.vhd}
   {C:/Users/Desktop/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd}
 }
