@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Wed Jun 13 16:53:47 2018
-| Host         : A_Y_W_s running 64-bit major release  (build 9200)
+| Date         : Thu Jun 14 01:38:24 2018
+| Host         : Arthur running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file StepSynthesizerMain_timing_summary_routed.rpt -rpx StepSynthesizerMain_timing_summary_routed.rpx -warn_on_violation
 | Design       : StepSynthesizerMain
 | Device       : 7a100t-csg324
@@ -52,9 +52,149 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 204 register/latch pins with no clock driven by root clock pin: Clk (HIGH)
+ There are 223 register/latch pins with no clock driven by root clock pin: Clk (HIGH)
 
  There are 4 register/latch pins with no clock driven by root clock pin: ClockDivider/tmp_clk_reg/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Counter2/TFlip0/temp_reg/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Counter2/TFlip1/temp_reg/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Counter2/TFlip2/temp_reg/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Counter2/TFlip3/temp_reg/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop0/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop0/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop0/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop0/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop1/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop1/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop1/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop1/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop10/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop10/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop10/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop10/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop11/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop11/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop11/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop11/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop12/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop12/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop12/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop12/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop13/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop13/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop13/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop13/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop14/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop14/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop14/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop14/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop15/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop15/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop15/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop15/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop2/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop2/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop2/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop2/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop3/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop3/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop3/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop3/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop4/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop4/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop4/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop4/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop5/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop5/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop5/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop5/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop6/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop6/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop6/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop6/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop7/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop7/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop7/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop7/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop8/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop8/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop8/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop8/q_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop9/q_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop9/q_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop9/q_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: DFlop9/q_reg[3]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: SpeakerSinePlay/clk_div_reg/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: SpeakerSinePlay/clk_sw_tmp_reg/Q (HIGH)
 
 
 2. checking constant_clock
@@ -69,7 +209,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 515 pins that are not constrained for maximum delay. (HIGH)
+ There are 604 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

@@ -33,12 +33,12 @@ architecture Structural of StepSynthesizerMain is
 			  Btn : in  STD_LOGIC;
            Q : out  STD_LOGIC);
 	end component;	
-	component SquareWaveGenerator is --generates square wave to be played by speaker
-    Port ( clk : in  STD_LOGIC;
-			  note : in STD_LOGIC_VECTOR(3 downto 0);
-			  en : in STD_LOGIC;
-           speaker : out STD_LOGIC);
-	end component;	
+--	component SquareWaveGenerator is --generates square wave to be played by speaker
+--    Port ( clk : in  STD_LOGIC;
+--			  note : in STD_LOGIC_VECTOR(3 downto 0);
+--			  en : in STD_LOGIC;
+--           speaker : out STD_LOGIC);
+--	end component;	
 	component seven_segment_display is -- seven segment display
 	Port ( CLOCK_100MHz : in STD_LOGIC;
                RESET : in STD_LOGIC;
@@ -75,6 +75,17 @@ architecture Structural of StepSynthesizerMain is
 	 Port (clk : in std_logic;
 			 sclk : out std_logic);
 	end component;
+	component pwm is
+	    Port ( clk_pwm : in STD_LOGIC;
+           pwm_in : in STD_LOGIC_VECTOR (7 downto 0);
+           pwm_out : out STD_LOGIC);
+    end component;
+    component sine_wave is
+        Port ( clk_sw_in : in STD_LOGIC;
+           tone : in std_logic_vector (3 downto 0);
+           en : in STD_LOGIC;
+           dataout : out STD_LOGIC_VECTOR (7 downto 0));
+    end component;
 
 	signal DEnab : std_logic_vector(15 downto 0); --enable signal to d flip-flops
 	subtype note is std_logic_vector(3 downto 0); --four bits which represent a specific tone
@@ -89,6 +100,7 @@ architecture Structural of StepSynthesizerMain is
 	signal FreqIncrDebounced : std_logic; --debounced signal from button 1
 	signal PlayPauseDebounced : std_logic; --debounced signal from button 3
 	signal SClk : std_logic; --divided clock signal
+	signal sine_wave_out : STD_LOGIC_VECTOR (7 downto 0);
 	
 begin
 
@@ -326,11 +338,14 @@ begin
 	end if;
 end process led_note;
 
---generates a square wave
-SpeakerPlay : SquareWaveGenerator port map (
-	clk => Clk,
-	note => CurrTone,
-	en => Counter2En,
-	speaker => Speaker);
+SpeakerSinePlay : sine_wave port map (clk_sw_in=>clk, tone=>CurrTone, en=>Counter2En, dataout=>sine_wave_out);
+
+PWMSine: pwm port map (clk_pwm=>clk, pwm_in=>sine_wave_out, pwm_out=>Speaker);
+----generates a square wave
+--SpeakerPlay : SquareWaveGenerator port map (
+--	clk => Clk,
+--	note => CurrTone,
+--	en => Counter2En,
+--	speaker => Speaker);
 
 end Structural;

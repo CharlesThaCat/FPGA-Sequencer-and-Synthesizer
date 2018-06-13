@@ -1,0 +1,38 @@
+
+*** Running vivado
+    with args -log pwm_sine.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pwm_sine.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source pwm_sine.tcl -notrace
+Command: synth_design -top pwm_sine -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 27424 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 359.379 ; gain = 99.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pwm_sine' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sources_1/new/pwm_sine.vhd:39]
+WARNING: [Synth 8-5640] Port 'clk_sw_in' is missing in component declaration [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sources_1/new/pwm_sine.vhd:41]
+WARNING: [Synth 8-5640] Port 'tone' is missing in component declaration [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sources_1/new/pwm_sine.vhd:41]
+WARNING: [Synth 8-5640] Port 'clk_div_out' is missing in component declaration [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sources_1/new/pwm_sine.vhd:41]
+INFO: [Synth 8-3491] module 'sine_wave' declared at 'C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/sine_wave.vhd:27' bound to instance 'UUT1' of component 'sine_wave' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sources_1/new/pwm_sine.vhd:66]
+ERROR: [Synth 8-3493] module 'sine_wave' declared at 'C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/sine_wave.vhd:27' does not have matching formal port for component port 'clk_sw' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sources_1/new/pwm_sine.vhd:66]
+WARNING: [Synth 8-5640] Port 'pwm_th' is missing in component declaration [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sources_1/new/pwm_sine.vhd:46]
+INFO: [Synth 8-3491] module 'pwm' declared at 'C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sources_1/new/pwm.vhd:34' bound to instance 'UUT2' of component 'pwm' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sources_1/new/pwm_sine.vhd:67]
+ERROR: [Synth 8-285] failed synthesizing module 'pwm_sine' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sources_1/new/pwm_sine.vhd:39]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 411.910 ; gain = 152.098
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+5 Infos, 4 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 14 00:05:31 2018...

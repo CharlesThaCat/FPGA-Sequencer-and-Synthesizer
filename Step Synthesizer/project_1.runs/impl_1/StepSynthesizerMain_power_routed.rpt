@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Wed Jun 13 16:53:47 2018
-| Host             : A_Y_W_s running 64-bit major release  (build 9200)
+| Date             : Thu Jun 14 01:38:24 2018
+| Host             : Arthur running 64-bit major release  (build 9200)
 | Command          : report_power -file StepSynthesizerMain_power_routed.rpt -pb StepSynthesizerMain_power_summary_routed.pb -rpx StepSynthesizerMain_power_routed.rpx
 | Design           : StepSynthesizerMain
 | Device           : xc7a100tcsg324-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 24.324 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 46.066 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 23.527                           |
+| Dynamic (W)              | 45.269                           |
 | Device Static (W)        | 0.797                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,16 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.930 |      399 |       --- |             --- |
-|   LUT as Logic |     0.787 |      110 |     63400 |            0.17 |
-|   Register     |     0.070 |      208 |    126800 |            0.16 |
-|   CARRY4       |     0.067 |       35 |     15850 |            0.22 |
+| Slice Logic    |    17.016 |     1744 |       --- |             --- |
+|   LUT as Logic |    15.902 |      953 |     63400 |            1.50 |
+|   F7/F8 Muxes  |     0.959 |      404 |     63400 |            0.64 |
+|   Register     |     0.083 |      259 |    126800 |            0.20 |
+|   CARRY4       |     0.066 |       35 |     15850 |            0.22 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       14 |       --- |             --- |
-| Signals        |     1.215 |      359 |       --- |             --- |
-| I/O            |    21.383 |       53 |       210 |           25.24 |
+|   Others       |     0.000 |       20 |       --- |             --- |
+| Signals        |    11.716 |      865 |       --- |             --- |
+| I/O            |    16.537 |       53 |       210 |           25.24 |
 | Static Power   |     0.797 |          |           |                 |
-| Total          |    24.324 |          |           |                 |
+| Total          |    46.066 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     2.787 |       2.225 |      0.563 |
-| Vccaux    |       1.800 |     0.873 |       0.781 |      0.093 |
-| Vcco33    |       3.300 |     6.034 |       6.030 |      0.004 |
+| Vccint    |       1.000 |    29.374 |      28.812 |      0.563 |
+| Vccaux    |       1.800 |     0.696 |       0.603 |      0.093 |
+| Vcco33    |       3.300 |     4.662 |       4.658 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,40 +139,41 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| StepSynthesizerMain |    23.527 |
+| StepSynthesizerMain |    45.269 |
 |   CIncr             |    <0.001 |
-|   ClockDivider      |     0.174 |
-|   Counter1          |     0.079 |
-|     TFlip0          |     0.036 |
-|     TFlip1          |     0.030 |
-|     TFlip2          |     0.010 |
-|     TFlip3          |     0.004 |
-|   Counter2          |     1.008 |
-|     TFlip0          |     0.058 |
-|     TFlip1          |     0.934 |
-|     TFlip2          |     0.012 |
-|     TFlip3          |     0.004 |
-|   DFlop0            |     0.007 |
-|   DFlop1            |     0.011 |
-|   DFlop10           |     0.009 |
-|   DFlop11           |     0.010 |
-|   DFlop12           |     0.009 |
-|   DFlop13           |     0.008 |
-|   DFlop14           |     0.009 |
-|   DFlop15           |     0.009 |
-|   DFlop2            |     0.008 |
-|   DFlop3            |     0.009 |
-|   DFlop4            |     0.009 |
-|   DFlop5            |     0.008 |
-|   DFlop6            |     0.008 |
-|   DFlop7            |     0.009 |
-|   DFlop8            |     0.008 |
-|   DFlop9            |     0.011 |
+|   ClockDivider      |     0.164 |
+|   Counter1          |     0.185 |
+|     TFlip0          |     0.050 |
+|     TFlip1          |     0.028 |
+|     TFlip2          |     0.081 |
+|     TFlip3          |     0.026 |
+|   Counter2          |    24.528 |
+|     TFlip0          |     0.076 |
+|     TFlip1          |    24.302 |
+|     TFlip2          |     0.139 |
+|     TFlip3          |     0.011 |
+|   DFlop0            |     0.022 |
+|   DFlop1            |     0.018 |
+|   DFlop10           |     0.022 |
+|   DFlop11           |     0.022 |
+|   DFlop12           |     0.022 |
+|   DFlop13           |     0.024 |
+|   DFlop14           |     0.023 |
+|   DFlop15           |     0.022 |
+|   DFlop2            |     0.018 |
+|   DFlop3            |     0.023 |
+|   DFlop4            |     0.016 |
+|   DFlop5            |     0.022 |
+|   DFlop6            |     0.022 |
+|   DFlop7            |     0.019 |
+|   DFlop8            |     0.020 |
+|   DFlop9            |     0.023 |
 |   Debounce1         |     0.068 |
-|   Debounce2         |     0.061 |
-|   PlayToggle        |     0.039 |
-|   SSegDisplay       |     0.254 |
-|   SpeakerPlay       |     0.197 |
+|   Debounce2         |     0.070 |
+|   PWMSine           |     0.221 |
+|   PlayToggle        |     0.037 |
+|   SSegDisplay       |     0.161 |
+|   SpeakerSinePlay   |     2.841 |
 +---------------------+-----------+
 
 
