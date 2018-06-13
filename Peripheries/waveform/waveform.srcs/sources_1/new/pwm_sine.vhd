@@ -33,14 +33,13 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity pwm_sine is
     Port ( clk_total : in STD_LOGIC;
-            analog_out_total : out STD_LOGIC_vector (7 downto 0);
            pwm_out_total : out STD_LOGIC);
 end pwm_sine;
 
 architecture Behavioral of pwm_sine is
 
     component sine_wave is
-        Port ( clk_sw : in STD_LOGIC;
+        Port ( clk_sw_in : in STD_LOGIC;
            dataout : out STD_LOGIC_VECTOR (7 downto 0));
     end component;  
 
@@ -52,22 +51,19 @@ architecture Behavioral of pwm_sine is
 
 signal signal_total: STD_LOGIC_VECTOR (7 downto 0);
 signal clk_sine: STD_LOGIC := '0';
-signal counter_sine: unsigned (9 downto 0) := (others=>'0');
+signal counter_sine: unsigned (7 downto 0) := (others=>'0');
 
 begin
-
-
 
 process(clk_total)
-begin
+begin -- frequency divider, sine wave's frequency: 100M/(2^8 * 639) = 611 Hz
     if rising_edge(clk_total) then
         counter_sine <= counter_sine + 1;
         clk_sine <= counter_sine(7);
     end if;
 end process;
 
-UUT1: sine_wave port map(clk_sw=>clk_sine, dataout=>signal_total);
+UUT1: sine_wave port map(clk_sw_in=>clk_sine, dataout=>signal_total);
 UUT2: pwm port map(clk_pwm=>clk_total, pwm_in=>signal_total, pwm_out=>pwm_out_total);
-analog_out_total <= signal_total;
 
 end Behavioral;

@@ -1,7 +1,7 @@
-Running: xsim.dir/sine_pwm_tb_time_impl/xsimk.exe -simmode gui -wdb sine_pwm_tb_time_impl.wdb -simrunnum 0 -socket 54572
+Running: xsim.dir/sine_pwm_tb_time_impl/xsimk.exe -simmode gui -wdb sine_pwm_tb_time_impl.wdb -simrunnum 0 -socket 51486
 Design successfully loaded
-Design Loading Memory Usage: 9716 KB (Peak: 9716 KB)
-Design Loading CPU Usage: 78 ms
+Design Loading Memory Usage: 7288 KB (Peak: 7288 KB)
+Design Loading CPU Usage: 46 ms
 Simulation completed
-Simulation Memory Usage: 16596 KB (Peak: 16596 KB)
-Simulation CPU Usage: 18390 ms
+Simulation Memory Usage: 16692 KB (Peak: 16692 KB)
+Simulation CPU Usage: 101468 ms

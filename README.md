@@ -20,3 +20,6 @@ Change Logs
 -
 * Sine wave generator in peripheries.
 * PWM encoder in peripheries, combined with sine wave generator.
+
+[0,c2,d2,e2,g2,a2,c3,d3,e3,g3,a3,c4     ,d4     ,e4     ,g4     ,a4  ]
+                                [1046.50,1174.66,1318.51,1567.98,3520] Hz

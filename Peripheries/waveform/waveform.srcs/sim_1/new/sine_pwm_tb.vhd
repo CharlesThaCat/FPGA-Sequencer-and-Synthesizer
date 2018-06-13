@@ -38,18 +38,16 @@ end sine_pwm_tb;
 architecture Behavioral of sine_pwm_tb is
     component pwm_sine is
         Port ( clk_total : in STD_LOGIC;
-               analog_out_total : out STD_LOGIC_vector (7 downto 0);
                pwm_out_total : out STD_LOGIC);
     end component;
 
 signal clk_tb,pwm_out_tb: STD_LOGIC;
-signal analog_out_tb: STD_LOGIC_VECTOR(7 downto 0);
 begin
 
-UUT: pwm_sine port map(clk_total=>clk_tb,analog_out_total=>analog_out_tb, pwm_out_total=>pwm_out_tb);
+UUT: pwm_sine port map(clk_total=>clk_tb,pwm_out_total=>pwm_out_tb);
 
 clock_gen: process
-    constant period : time := 100 ns;
+    constant period : time := 10 ns;
     begin
     clk_tb <= '1';
     wait for period/2;

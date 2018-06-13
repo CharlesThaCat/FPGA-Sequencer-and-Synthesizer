@@ -5,6 +5,7 @@ vhdl xil_defaultlib  \
 "../../../../waveform.srcs/sources_1/new/pwm_sine.vhd" \
 "../../../../waveform.srcs/sim_1/new/sine_pwm_tb.vhd" \
 "../../../../../sine_tb.vhd" \
+"../../../../waveform.srcs/sim_1/new/pwm_tb.vhd" \
 
 # Do not sort compile order
 nosort

@@ -37,18 +37,21 @@ end sine_tb;
 
 architecture Behavioral of sine_tb is
     component sine_wave is
-        Port ( clk_sw : in STD_LOGIC;
+    Port ( clk_sw_in : in STD_LOGIC;
+           tone : in std_logic_vector (3 downto 0);
+           clk_div_out : out STD_LOGIC;
            dataout : out STD_LOGIC_VECTOR (7 downto 0));
     end component;
 
-signal clk_tb: STD_LOGIC;
+signal clk_tb, clk_div_tb: STD_LOGIC;
+signal tone_tb : STD_LOGIC_VECTOR (3 downto 0):= "0101";
 signal dataout_tb: STD_LOGIC_VECTOR(7 downto 0);
 begin
 
-UUT: sine_wave port map(clk_sw=>clk_tb, dataout=>dataout_tb);
+UUT: sine_wave port map(clk_sw_in=>clk_tb, tone=>tone_tb, clk_div_out=> clk_div_tb, dataout=>dataout_tb);
 
 clock_gen: process
-    constant period : time := 10 us;
+    constant period : time := 10 ns;
     begin
     clk_tb <= '1';
     wait for period/2;

@@ -14,24 +14,24 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package vl.vl_types
 Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(RDADDR_COLLIS...
+Compiling module simprims_ver.RAMB18E1(INIT_00=256'b0100100110...
 Compiling module simprims_ver.LUT6
 Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
 Compiling module simprims_ver.x_lut3_mux8
 Compiling module simprims_ver.LUT3
 Compiling module simprims_ver.LUT4
-Compiling module simprims_ver.x_lut2_mux4
-Compiling module simprims_ver.LUT2
 Compiling module simprims_ver.FDRE_default
-Compiling module simprims_ver.MUXF7
-Compiling module simprims_ver.MUXF8
 Compiling module xil_defaultlib.sine_wave
 Compiling module simprims_ver.x_lut1_mux2
 Compiling module simprims_ver.LUT1
 Compiling module simprims_ver.CARRY4
 Compiling module xil_defaultlib.pwm
-Compiling module simprims_ver.OBUF
 Compiling module simprims_ver.BUFG
 Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
 Compiling module xil_defaultlib.pwm_sine
 Compiling architecture behavioral of entity xil_defaultlib.sine_pwm_tb
 Built simulation snapshot sine_pwm_tb_time_impl

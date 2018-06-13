@@ -3,6 +3,6 @@
 Dec 15 2017
 21:07:18
 C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/sine_tb.vhd,1528730443,vhdl,,,,sine_tb,,,,,,,,
-C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.sim/sim_1/impl/timing/xsim/sine_pwm_tb_time_impl.v,1528802949,verilog,,,,glbl;pwm;pwm_sine;sine_wave,,,,,,,,
+C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.sim/sim_1/impl/timing/xsim/sine_pwm_tb_time_impl.v,1528897042,verilog,,,,glbl;pwm;pwm_sine;sine_wave,,,,,,,,
 C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sim_1/new/pwm_tb.vhd,1528802429,vhdl,,,,pwm_tb,,,,,,,,
-C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sim_1/new/sine_pwm_tb.vhd,1528774788,vhdl,,,,sine_pwm_tb,,,,,,,,
+C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Peripheries/waveform/waveform.srcs/sim_1/new/sine_pwm_tb.vhd,1528887734,vhdl,,,,sine_pwm_tb,,,,,,,,
