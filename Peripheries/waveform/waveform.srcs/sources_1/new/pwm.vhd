@@ -34,7 +34,6 @@ use IEEE.NUMERIC_STD.ALL;
 entity pwm is
     Port ( clk_pwm : in STD_LOGIC;
            pwm_in : in STD_LOGIC_VECTOR (7 downto 0);
-           pwm_th : out std_logic_vector (7 downto 0);
            pwm_out : out STD_LOGIC);
 end pwm;
 
@@ -61,6 +60,5 @@ begin
     end if;
 end process;
 counter_next <= counter +1 ; -- counter from 0 to 1023, then 0 again, going into the next duty cycle
-pwm_th <= std_logic_vector(threshold);
 
 end Behavioral;

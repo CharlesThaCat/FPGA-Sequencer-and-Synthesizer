@@ -27,13 +27,12 @@ use IEEE.NUMERIC_STD.ALL;
 entity sine_wave is
     Port ( clk_sw_in : in STD_LOGIC;
            tone : in std_logic_vector (3 downto 0);
-           clk_div_out : out STD_LOGIC;
            dataout : out STD_LOGIC_VECTOR (7 downto 0));
 end sine_wave;
 
 architecture Behavioral of sine_wave is
 
-signal counter_phys_max : integer := 51;
+signal counter_phys_max : integer := 46;
 signal clk_sw, clk_sw_tmp : STD_LOGIC := '0';
 
 signal index, index_next, max_index: integer range 0 to 511 := 0;
@@ -142,7 +141,7 @@ if (rising_edge(clk_sw)) then
     end if;
 end if;
 end process;
-counter_div_next <= counter_div + 1 when counter_div < counter_div_max + 1 else 1;  
+counter_div_next <= counter_div + 1 when counter_div < counter_div_max else 1;  
 
 -- output value loader, reads the array waveform value 
 process(clk_div)
@@ -154,5 +153,4 @@ end if;
 end process;
 index_next <= 0 when index = max_index else index + 1;
 
-clk_div_out <= clk_div;
 end Behavioral;

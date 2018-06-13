@@ -44,7 +44,7 @@ architecture Behavioral of sine_tb is
     end component;
 
 signal clk_tb, clk_div_tb: STD_LOGIC;
-signal tone_tb : STD_LOGIC_VECTOR (3 downto 0):= "0101";
+signal tone_tb : STD_LOGIC_VECTOR (3 downto 0):= "1011";
 signal dataout_tb: STD_LOGIC_VECTOR(7 downto 0);
 begin
 
