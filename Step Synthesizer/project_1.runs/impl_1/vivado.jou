@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Jun 14 01:48:53 2018
-# Process ID: 14344
+# Start of session at: Thu Jun 14 08:25:44 2018
+# Process ID: 15480
 # Current directory: C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.runs/impl_1
 # Command line: vivado.exe -log StepSynthesizerMain.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source StepSynthesizerMain.tcl -notrace
 # Log file: C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.runs/impl_1/StepSynthesizerMain.vdi

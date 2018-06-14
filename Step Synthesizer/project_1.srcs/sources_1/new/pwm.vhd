@@ -39,8 +39,8 @@ end pwm;
 
 architecture Behavioral of pwm is
 signal EN : STD_LOGIC;
-signal counter, counter_next : UNSIGNED (7 downto 0) := (others=>'0');
-signal threshold : UNSIGNED (7 downto 0) := (others=>'0');
+signal counter, counter_next : UNSIGNED (8 downto 0) := (others=>'0');
+signal threshold : UNSIGNED (8 downto 0) := (others=>'0');
 
 begin
 
@@ -49,8 +49,8 @@ begin
 process(clk_pwm, pwm_in)
 begin
     if rising_edge(clk_pwm) then
-        if counter = 0 then -- calculate duty period, pwm_in (0 to 255), duty (0 to 255)
-            threshold <= unsigned(pwm_in);
+        if counter = 0 then -- calculate duty period, pwm_in (0 to 255), duty (0 to 511)
+            threshold <= unsigned(pwm_in) & "0";
         end if;
 
         if counter < threshold then -- assign the output value due to counter index
@@ -61,6 +61,6 @@ begin
         counter <= counter_next;
     end if;
 end process;
-counter_next <= counter +1 ; -- counter from 0 to 1023, then 0 again, going into the next duty cycle
+counter_next <= counter +1 ; -- counter from 0 to 511, then 0 again, going into the next duty cycle
 
 end Behavioral;

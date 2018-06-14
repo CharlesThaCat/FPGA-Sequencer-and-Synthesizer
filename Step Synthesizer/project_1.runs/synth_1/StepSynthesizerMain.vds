@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Jun 14 01:35:09 2018
-# Process ID: 51004
+# Start of session at: Thu Jun 14 08:24:04 2018
+# Process ID: 792
 # Current directory: C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.runs/synth_1
 # Command line: vivado.exe -log StepSynthesizerMain.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source StepSynthesizerMain.tcl
 # Log file: C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.runs/synth_1/StepSynthesizerMain.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 30812 
+INFO: Helper process launched with PID 15072 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 360.094 ; gain = 99.582
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 360.441 ; gain = 100.785
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'StepSynthesizerMain' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:23]
 INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/debounce.vhd:27' bound to instance 'Debounce1' of component 'debounce' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:118]
@@ -71,19 +71,19 @@ INFO: [Synth 8-226] default block is never used [C:/Users/Arthur/Documents/Works
 INFO: [Synth 8-226] default block is never used [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:319]
 INFO: [Synth 8-3491] module 'sine_wave' declared at 'C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:27' bound to instance 'SpeakerSinePlay' of component 'sine_wave' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:341]
 INFO: [Synth 8-638] synthesizing module 'sine_wave' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:34]
-INFO: [Synth 8-226] default block is never used [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:70]
-WARNING: [Synth 8-614] signal 'C' is read in the process but is not in the sensitivity list [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:68]
-WARNING: [Synth 8-614] signal 'D' is read in the process but is not in the sensitivity list [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:68]
-WARNING: [Synth 8-614] signal 'E' is read in the process but is not in the sensitivity list [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:68]
-WARNING: [Synth 8-614] signal 'G' is read in the process but is not in the sensitivity list [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:68]
-WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:68]
+INFO: [Synth 8-226] default block is never used [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:71]
+WARNING: [Synth 8-614] signal 'C' is read in the process but is not in the sensitivity list [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:69]
+WARNING: [Synth 8-614] signal 'D' is read in the process but is not in the sensitivity list [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:69]
+WARNING: [Synth 8-614] signal 'E' is read in the process but is not in the sensitivity list [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:69]
+WARNING: [Synth 8-614] signal 'G' is read in the process but is not in the sensitivity list [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:69]
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:69]
 INFO: [Synth 8-256] done synthesizing module 'sine_wave' (9#1) [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:34]
 INFO: [Synth 8-3491] module 'pwm' declared at 'C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/pwm.vhd:34' bound to instance 'PWMSine' of component 'pwm' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:343]
 INFO: [Synth 8-638] synthesizing module 'pwm' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/pwm.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'pwm' (10#1) [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/pwm.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'StepSynthesizerMain' (11#1) [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 431.297 ; gain = 170.785
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 431.113 ; gain = 171.457
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -93,7 +93,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 431.297 ; gain = 170.785
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 431.113 ; gain = 171.457
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -109,22 +109,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 775.520 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 774.020 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 775.520 ; gain = 515.008
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 774.020 ; gain = 514.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 775.520 ; gain = 515.008
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 774.020 ; gain = 514.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 775.520 ; gain = 515.008
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 774.020 ; gain = 514.363
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element counter_out_reg was removed.  [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/debounce.vhd:50]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/seven_segment_display.vhd:56]
@@ -135,9 +135,9 @@ INFO: [Synth 8-5545] ROM "clk_sw_tmp" won't be mapped to RAM because address siz
 INFO: [Synth 8-5545] ROM "div_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "clk_div" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "threshold" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 'counter_div_max_reg' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:76]
+WARNING: [Synth 8-327] inferring latch for variable 'counter_div_max_reg' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:77]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 775.520 ; gain = 515.008
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 774.020 ; gain = 514.363
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -151,16 +151,15 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 2     
-	   2 Input      9 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
 	   3 Input      4 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 1     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 10    
 +---Registers : 
 	               32 Bit    Registers := 2     
-	                9 Bit    Registers := 1     
-	                8 Bit    Registers := 3     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 17    
 	                2 Bit    Registers := 3     
 	                1 Bit    Registers := 16    
@@ -256,9 +255,9 @@ Detailed RTL Component Info :
 Module pwm 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      8 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
@@ -279,8 +278,8 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "div_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk_sw_tmp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element counter_div_reg was removed.  [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:137]
-WARNING: [Synth 8-6014] Unused sequential element index_reg was removed.  [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:152]
+WARNING: [Synth 8-6014] Unused sequential element counter_div_reg was removed.  [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:143]
+WARNING: [Synth 8-6014] Unused sequential element index_reg was removed.  [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:158]
 INFO: [Synth 8-5545] ROM "ClockDivider/div_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "ClockDivider/tmp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "PWMSine/threshold" won't be mapped to RAM because it is too sparse
@@ -289,9 +288,11 @@ WARNING: [Synth 8-6014] Unused sequential element Debounce1/counter_out_reg was 
 WARNING: [Synth 8-6014] Unused sequential element SSegDisplay/refresh_counter_reg was removed.  [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/seven_segment_display.vhd:42]
 WARNING: [Synth 8-6014] Unused sequential element Debounce2/counter_out_reg was removed.  [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/debounce.vhd:50]
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (SpeakerSinePlay/\counter_div_max_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PWMSine/threshold_reg[0] )
 WARNING: [Synth 8-3332] Sequential element (counter_div_max_reg[0]) is unused and will be removed from module sine_wave.
+WARNING: [Synth 8-3332] Sequential element (PWMSine/threshold_reg[0]) is unused and will be removed from module StepSynthesizerMain.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 814.406 ; gain = 553.895
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 812.254 ; gain = 552.598
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -303,13 +304,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 906.984 ; gain = 646.473
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 906.430 ; gain = 646.773
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 907.816 ; gain = 647.305
+Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 907.172 ; gain = 647.516
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -321,7 +322,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 935.316 ; gain = 674.805
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 934.637 ; gain = 674.980
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -345,7 +346,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 935.316 ; gain = 674.805
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -358,7 +359,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 935.316 ; gain = 674.805
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -370,25 +371,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 935.316 ; gain = 674.805
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 935.316 ; gain = 674.805
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 935.316 ; gain = 674.805
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 935.316 ; gain = 674.805
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -404,18 +405,18 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     1|
-|2     |CARRY4 |    35|
+|1     |BUFG   |     2|
+|2     |CARRY4 |    36|
 |3     |LUT1   |    16|
-|4     |LUT2   |    37|
-|5     |LUT3   |    39|
-|6     |LUT4   |    63|
-|7     |LUT5   |    95|
-|8     |LUT6   |   775|
-|9     |MUXF7  |   282|
+|4     |LUT2   |    42|
+|5     |LUT3   |    41|
+|6     |LUT4   |    64|
+|7     |LUT5   |    96|
+|8     |LUT6   |   776|
+|9     |MUXF7  |   281|
 |10    |MUXF8  |   122|
 |11    |FDCE   |    92|
-|12    |FDRE   |   163|
+|12    |FDRE   |   172|
 |13    |FDSE   |     1|
 |14    |LD     |     3|
 |15    |IBUF   |    21|
@@ -426,7 +427,7 @@ Report Instance Areas:
 +------+------------------+----------------------+------+
 |      |Instance          |Module                |Cells |
 +------+------------------+----------------------+------+
-|1     |top               |                      |  1777|
+|1     |top               |                      |  1797|
 |2     |  CIncr           |PulseGenerator        |     2|
 |3     |  ClockDivider    |clk_div2              |    52|
 |4     |  Counter1        |TFlopCounter          |    27|
@@ -434,9 +435,9 @@ Report Instance Areas:
 |6     |    TFlip1        |tflipflop_21          |     3|
 |7     |    TFlip2        |tflipflop_22          |    16|
 |8     |    TFlip3        |tflipflop_23          |     5|
-|9     |  Counter2        |TFlopCounter_0        |  1228|
+|9     |  Counter2        |TFlopCounter_0        |  1225|
 |10    |    TFlip0        |tflipflop             |     2|
-|11    |    TFlip1        |tflipflop_17          |  1206|
+|11    |    TFlip1        |tflipflop_17          |  1203|
 |12    |    TFlip2        |tflipflop_18          |    18|
 |13    |    TFlip3        |tflipflop_19          |     2|
 |14    |  DFlop0          |DFlop3bit             |     6|
@@ -457,17 +458,17 @@ Report Instance Areas:
 |29    |  DFlop9          |DFlop3bit_15          |     6|
 |30    |  Debounce1       |debounce              |    35|
 |31    |  Debounce2       |debounce_16           |    34|
-|32    |  PWMSine         |pwm                   |    39|
+|32    |  PWMSine         |pwm                   |    46|
 |33    |  PlayToggle      |ButtonToggle          |     5|
 |34    |  SSegDisplay     |seven_segment_display |    36|
-|35    |  SpeakerSinePlay |sine_wave             |   169|
+|35    |  SpeakerSinePlay |sine_wave             |   184|
 +------+------------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 935.316 ; gain = 674.805
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:01:09 . Memory (MB): peak = 935.316 ; gain = 330.582
-Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 935.316 ; gain = 674.805
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:02 ; elapsed = 00:01:14 . Memory (MB): peak = 934.637 ; gain = 332.074
+Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 463 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -478,10 +479,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LD => LDCE: 3 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-82 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+83 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:21 . Memory (MB): peak = 935.316 ; gain = 687.113
+synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 934.637 ; gain = 686.453
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.runs/synth_1/StepSynthesizerMain.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file StepSynthesizerMain_utilization_synth.rpt -pb StepSynthesizerMain_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 935.316 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 14 01:36:36 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 934.637 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 14 08:25:37 2018...

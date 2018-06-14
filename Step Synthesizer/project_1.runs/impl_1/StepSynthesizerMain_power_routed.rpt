@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Thu Jun 14 01:38:24 2018
+| Date             : Thu Jun 14 08:27:14 2018
 | Host             : Arthur running 64-bit major release  (build 9200)
 | Command          : report_power -file StepSynthesizerMain_power_routed.rpt -pb StepSynthesizerMain_power_summary_routed.pb -rpx StepSynthesizerMain_power_routed.rpx
 | Design           : StepSynthesizerMain
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 46.066 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 40.539 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 45.269                           |
+| Dynamic (W)              | 39.742                           |
 | Device Static (W)        | 0.797                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |    17.016 |     1744 |       --- |             --- |
-|   LUT as Logic |    15.902 |      953 |     63400 |            1.50 |
-|   F7/F8 Muxes  |     0.959 |      404 |     63400 |            0.64 |
-|   Register     |     0.083 |      259 |    126800 |            0.20 |
-|   CARRY4       |     0.066 |       35 |     15850 |            0.22 |
-|   BUFG         |     0.006 |        1 |        32 |            3.13 |
+| Slice Logic    |    14.052 |     1764 |       --- |             --- |
+|   LUT as Logic |    13.120 |      968 |     63400 |            1.53 |
+|   F7/F8 Muxes  |     0.778 |      403 |     63400 |            0.64 |
+|   Register     |     0.082 |      268 |    126800 |            0.21 |
+|   CARRY4       |     0.066 |       36 |     15850 |            0.23 |
+|   BUFG         |     0.006 |        2 |        32 |            6.25 |
 |   Others       |     0.000 |       20 |       --- |             --- |
-| Signals        |    11.716 |      865 |       --- |             --- |
+| Signals        |     9.153 |      875 |       --- |             --- |
 | I/O            |    16.537 |       53 |       210 |           25.24 |
 | Static Power   |     0.797 |          |           |                 |
-| Total          |    46.066 |          |           |                 |
+| Total          |    40.539 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |    29.374 |      28.812 |      0.563 |
+| Vccint    |       1.000 |    23.848 |      23.285 |      0.563 |
 | Vccaux    |       1.800 |     0.696 |       0.603 |      0.093 |
 | Vcco33    |       3.300 |     4.662 |       4.658 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -139,41 +139,41 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| StepSynthesizerMain |    45.269 |
+| StepSynthesizerMain |    39.742 |
 |   CIncr             |    <0.001 |
-|   ClockDivider      |     0.164 |
-|   Counter1          |     0.185 |
-|     TFlip0          |     0.050 |
-|     TFlip1          |     0.028 |
+|   ClockDivider      |     0.176 |
+|   Counter1          |     0.179 |
+|     TFlip0          |     0.047 |
+|     TFlip1          |     0.025 |
 |     TFlip2          |     0.081 |
-|     TFlip3          |     0.026 |
-|   Counter2          |    24.528 |
-|     TFlip0          |     0.076 |
-|     TFlip1          |    24.302 |
-|     TFlip2          |     0.139 |
-|     TFlip3          |     0.011 |
+|     TFlip3          |     0.025 |
+|   Counter2          |    20.458 |
+|     TFlip0          |     0.069 |
+|     TFlip1          |    20.249 |
+|     TFlip2          |     0.132 |
+|     TFlip3          |     0.008 |
 |   DFlop0            |     0.022 |
-|   DFlop1            |     0.018 |
-|   DFlop10           |     0.022 |
+|   DFlop1            |     0.020 |
+|   DFlop10           |     0.025 |
 |   DFlop11           |     0.022 |
-|   DFlop12           |     0.022 |
-|   DFlop13           |     0.024 |
-|   DFlop14           |     0.023 |
-|   DFlop15           |     0.022 |
-|   DFlop2            |     0.018 |
-|   DFlop3            |     0.023 |
-|   DFlop4            |     0.016 |
-|   DFlop5            |     0.022 |
-|   DFlop6            |     0.022 |
-|   DFlop7            |     0.019 |
-|   DFlop8            |     0.020 |
+|   DFlop12           |     0.021 |
+|   DFlop13           |     0.019 |
+|   DFlop14           |     0.028 |
+|   DFlop15           |     0.020 |
+|   DFlop2            |     0.020 |
+|   DFlop3            |     0.025 |
+|   DFlop4            |     0.025 |
+|   DFlop5            |     0.024 |
+|   DFlop6            |     0.025 |
+|   DFlop7            |     0.026 |
+|   DFlop8            |     0.021 |
 |   DFlop9            |     0.023 |
-|   Debounce1         |     0.068 |
-|   Debounce2         |     0.070 |
-|   PWMSine           |     0.221 |
-|   PlayToggle        |     0.037 |
-|   SSegDisplay       |     0.161 |
-|   SpeakerSinePlay   |     2.841 |
+|   Debounce1         |     0.072 |
+|   Debounce2         |     0.078 |
+|   PWMSine           |     0.245 |
+|   PlayToggle        |     0.040 |
+|   SSegDisplay       |     0.160 |
+|   SpeakerSinePlay   |     1.307 |
 +---------------------+-----------+
 
 
