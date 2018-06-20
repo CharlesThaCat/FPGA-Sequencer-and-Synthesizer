@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15072 
+INFO: Helper process launched with PID 412 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 360.441 ; gain = 100.785
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 360.594 ; gain = 99.953
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'StepSynthesizerMain' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:23]
 INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/debounce.vhd:27' bound to instance 'Debounce1' of component 'debounce' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:118]
@@ -82,7 +82,7 @@ INFO: [Synth 8-638] synthesizing module 'pwm' [C:/Users/Arthur/Documents/Workspa
 INFO: [Synth 8-256] done synthesizing module 'pwm' (10#1) [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/pwm.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'StepSynthesizerMain' (11#1) [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/StepSynthesizerMain.vhd:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 431.113 ; gain = 171.457
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 431.031 ; gain = 170.391
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -92,7 +92,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 431.113 ; gain = 171.457
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 431.031 ; gain = 170.391
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -108,22 +108,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 774.020 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 775.855 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 774.020 ; gain = 514.363
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 775.855 ; gain = 515.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 774.020 ; gain = 514.363
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 775.855 ; gain = 515.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 774.020 ; gain = 514.363
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 775.855 ; gain = 515.215
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element counter_out_reg was removed.  [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/debounce.vhd:50]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/seven_segment_display.vhd:56]
@@ -136,7 +136,7 @@ INFO: [Synth 8-5544] ROM "clk_div" won't be mapped to Block RAM because address 
 INFO: [Synth 8-5546] ROM "threshold" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-327] inferring latch for variable 'counter_div_max_reg' [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/sine_wave.vhd:77]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 774.020 ; gain = 514.363
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 775.855 ; gain = 515.215
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -150,14 +150,16 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 2     
-	   2 Input      9 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
 	   3 Input      4 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 1     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 10    
 +---Registers : 
 	               32 Bit    Registers := 2     
-	                9 Bit    Registers := 3     
+	               11 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 17    
 	                2 Bit    Registers := 3     
@@ -254,9 +256,9 @@ Detailed RTL Component Info :
 Module pwm 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      9 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
 +---Registers : 
-	                9 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
@@ -287,11 +289,13 @@ WARNING: [Synth 8-6014] Unused sequential element Debounce1/counter_out_reg was 
 WARNING: [Synth 8-6014] Unused sequential element SSegDisplay/refresh_counter_reg was removed.  [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/seven_segment_display.vhd:42]
 WARNING: [Synth 8-6014] Unused sequential element Debounce2/counter_out_reg was removed.  [C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.srcs/sources_1/new/debounce.vhd:50]
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (SpeakerSinePlay/\counter_div_max_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PWMSine/threshold_reg[0] )
+INFO: [Synth 8-3886] merging instance 'PWMSine/threshold_reg[0]' (FDE) to 'PWMSine/threshold_reg[1]'
+INFO: [Synth 8-3886] merging instance 'PWMSine/threshold_reg[1]' (FDE) to 'PWMSine/threshold_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PWMSine/threshold_reg[2] )
 WARNING: [Synth 8-3332] Sequential element (counter_div_max_reg[0]) is unused and will be removed from module sine_wave.
-WARNING: [Synth 8-3332] Sequential element (PWMSine/threshold_reg[0]) is unused and will be removed from module StepSynthesizerMain.
+WARNING: [Synth 8-3332] Sequential element (PWMSine/threshold_reg[2]) is unused and will be removed from module StepSynthesizerMain.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 812.254 ; gain = 552.598
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 816.750 ; gain = 556.109
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -303,13 +307,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 906.430 ; gain = 646.773
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 906.914 ; gain = 646.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 907.172 ; gain = 647.516
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 907.805 ; gain = 647.164
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -321,7 +325,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 934.637 ; gain = 674.980
+Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:25 . Memory (MB): peak = 934.645 ; gain = 674.004
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -345,7 +349,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
+Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 934.645 ; gain = 674.004
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -358,7 +362,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 934.645 ; gain = 674.004
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -370,25 +374,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 934.645 ; gain = 674.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 934.645 ; gain = 674.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 934.645 ; gain = 674.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 934.645 ; gain = 674.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -408,14 +412,14 @@ Report Cell Usage:
 |2     |CARRY4 |    36|
 |3     |LUT1   |    16|
 |4     |LUT2   |    42|
-|5     |LUT3   |    41|
-|6     |LUT4   |    64|
-|7     |LUT5   |    96|
-|8     |LUT6   |   776|
-|9     |MUXF7  |   281|
+|5     |LUT3   |    40|
+|6     |LUT4   |    73|
+|7     |LUT5   |    98|
+|8     |LUT6   |   762|
+|9     |MUXF7  |   275|
 |10    |MUXF8  |   122|
 |11    |FDCE   |    92|
-|12    |FDRE   |   172|
+|12    |FDRE   |   174|
 |13    |FDSE   |     1|
 |14    |LD     |     3|
 |15    |IBUF   |    21|
@@ -426,14 +430,14 @@ Report Instance Areas:
 +------+------------------+----------------------+------+
 |      |Instance          |Module                |Cells |
 +------+------------------+----------------------+------+
-|1     |top               |                      |  1797|
+|1     |top               |                      |  1789|
 |2     |  CIncr           |PulseGenerator        |     2|
 |3     |  ClockDivider    |clk_div2              |    52|
-|4     |  Counter1        |TFlopCounter          |    27|
+|4     |  Counter1        |TFlopCounter          |    18|
 |5     |    TFlip0        |tflipflop_20          |     3|
-|6     |    TFlip1        |tflipflop_21          |     3|
-|7     |    TFlip2        |tflipflop_22          |    16|
-|8     |    TFlip3        |tflipflop_23          |     5|
+|6     |    TFlip1        |tflipflop_21          |    11|
+|7     |    TFlip2        |tflipflop_22          |     2|
+|8     |    TFlip3        |tflipflop_23          |     2|
 |9     |  Counter2        |TFlopCounter_0        |  1225|
 |10    |    TFlip0        |tflipflop             |     2|
 |11    |    TFlip1        |tflipflop_17          |  1203|
@@ -457,19 +461,19 @@ Report Instance Areas:
 |29    |  DFlop9          |DFlop3bit_15          |     6|
 |30    |  Debounce1       |debounce              |    35|
 |31    |  Debounce2       |debounce_16           |    34|
-|32    |  PWMSine         |pwm                   |    46|
+|32    |  PWMSine         |pwm                   |    47|
 |33    |  PlayToggle      |ButtonToggle          |     5|
 |34    |  SSegDisplay     |seven_segment_display |    36|
 |35    |  SpeakerSinePlay |sine_wave             |   184|
 +------+------------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 934.645 ; gain = 674.004
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:02 ; elapsed = 00:01:14 . Memory (MB): peak = 934.637 ; gain = 332.074
-Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 934.637 ; gain = 674.980
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:19 . Memory (MB): peak = 934.645 ; gain = 329.180
+Synthesis Optimization Complete : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 934.645 ; gain = 674.004
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 463 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 457 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -478,10 +482,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LD => LDCE: 3 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-83 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+85 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 934.637 ; gain = 686.453
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:32 . Memory (MB): peak = 934.645 ; gain = 686.367
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.runs/synth_1/StepSynthesizerMain.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file StepSynthesizerMain_utilization_synth.rpt -pb StepSynthesizerMain_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 934.637 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 14 08:25:37 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 934.645 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 14 10:18:45 2018...
