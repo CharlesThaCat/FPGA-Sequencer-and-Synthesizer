@@ -49,7 +49,7 @@ begin
 process(clk_pwm, pwm_in)
 begin
     if rising_edge(clk_pwm) then
-        if counter = 0 then -- calculate duty period, pwm_in (0 to 255), duty (0 to 511)
+        if counter = 0 then -- calculate duty period, pwm_in (0 to 255), duty (0 to 2047)
             threshold <= unsigned(pwm_in) & "000";
         end if;
 
