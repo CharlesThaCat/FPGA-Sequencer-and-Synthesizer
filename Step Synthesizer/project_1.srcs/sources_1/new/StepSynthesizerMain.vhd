@@ -33,12 +33,6 @@ architecture Structural of StepSynthesizerMain is
 			  Btn : in  STD_LOGIC;
            Q : out  STD_LOGIC);
 	end component;	
---	component SquareWaveGenerator is --generates square wave to be played by speaker
---    Port ( clk : in  STD_LOGIC;
---			  note : in STD_LOGIC_VECTOR(3 downto 0);
---			  en : in STD_LOGIC;
---           speaker : out STD_LOGIC);
---	end component;	
 	component seven_segment_display is -- seven segment display
 	Port ( CLOCK_100MHz : in STD_LOGIC;
                RESET : in STD_LOGIC;
@@ -46,14 +40,6 @@ architecture Structural of StepSynthesizerMain is
                Anode_Activate :out  STD_LOGIC_VECTOR (7 downto 0);
                LED : out STD_LOGIC_VECTOR (6 downto 0));
 	end component;
-	-- component sseg_dec is --displays binary input in decimal form on seven segment display
-    -- Port ( ALU_VAL : in std_logic_vector(7 downto 0); 
-	-- 		  SIGN : in std_logic;
-	-- 		  VALID : in std_logic;
-	-- 		  CLK : in std_logic;
-	-- 		  DISP_EN : out std_logic_vector(3 downto 0);
-	-- 		  SEGMENTS : out std_logic_vector(7 downto 0));
-	-- end component;	
 	component DFlop3bit is --d flip flop with a 4-bit input
 	 Port ( clk : in std_logic;
 			  reset : in std_logic;
@@ -143,15 +129,6 @@ Counter1 : TFlopCounter port map (
  	ALU(3) <= DInp(3);
  end process;
 
- --converts the binary number representing the current frequency to a decimal number to
- --be displayed on the seven segment display
--- SSegDisplay : sseg_dec port map (
--- 	ALU_VAL => ALU,
--- 	SIGN => '0',
--- 	VALID => '1',
--- 	CLK => Clk,
--- 	DISP_EN => Display,
--- 	SEGMENTS => LEDSegment);	
 SSegDisplay: seven_segment_display port map (
                CLOCK_100MHz => Clk,
                RESET => Reset,
@@ -341,11 +318,5 @@ end process led_note;
 SpeakerSinePlay : sine_wave port map (clk_sw_in=>clk, tone=>CurrTone, en=>Counter2En, dataout=>sine_wave_out);
 
 PWMSine: pwm port map (clk_pwm=>clk, pwm_in=>sine_wave_out, pwm_out=>Speaker);
-----generates a square wave
---SpeakerPlay : SquareWaveGenerator port map (
---	clk => Clk,
---	note => CurrTone,
---	en => Counter2En,
---	speaker => Speaker);
 
 end Structural;
