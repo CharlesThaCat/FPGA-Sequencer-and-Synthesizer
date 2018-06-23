@@ -14,8 +14,6 @@ entity StepSynthesizerMain is
            	Reset : in  STD_LOGIC; --button 4, resets all notes
            	Anode_Activation :out  STD_LOGIC_VECTOR (7 downto 0);
             LEDSegment : out STD_LOGIC_VECTOR (6 downto 0);
---           	LEDSegment : out  STD_LOGIC_VECTOR (7 downto 0); --led segments on seven segment display (cathode)
---           	Display : out  STD_LOGIC_VECTOR (3 downto 0); --determines which of the four seven segment displays to turn on (anode)
 			LEDNote : out STD_LOGIC_VECTOR (15 downto 0); --leds above the switches, representing which beat is currently being played
 			Speaker : out STD_LOGIC); --output to the speaker
 end StepSynthesizerMain;
