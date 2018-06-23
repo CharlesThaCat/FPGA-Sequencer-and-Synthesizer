@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Jun 14 10:17:06 2018
-# Process ID: 17320
-# Current directory: C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.runs/synth_1
+# Start of session at: Sat Jun 23 17:21:24 2018
+# Process ID: 2984
+# Current directory: C:/Users/в©нд/Documents/Git--VSCode--GitHub/Step Synthesizer -- Digital System Design Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.runs/synth_1
 # Command line: vivado.exe -log StepSynthesizerMain.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source StepSynthesizerMain.tcl
-# Log file: C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.runs/synth_1/StepSynthesizerMain.vds
-# Journal file: C:/Users/Arthur/Documents/Workspace/Lab_DSD/Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.runs/synth_1\vivado.jou
+# Log file: C:/Users/в©нд/Documents/Git--VSCode--GitHub/Step Synthesizer -- Digital System Design Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.runs/synth_1/StepSynthesizerMain.vds
+# Journal file: C:/Users/в©нд/Documents/Git--VSCode--GitHub/Step Synthesizer -- Digital System Design Project/FPGA-Sequencer-and-Synthesizer/Step Synthesizer/project_1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source StepSynthesizerMain.tcl -notrace

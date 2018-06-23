@@ -38,7 +38,7 @@ architecture Structural of StepSynthesizerMain is
                Anode_Activate :out  STD_LOGIC_VECTOR (7 downto 0);
                LED : out STD_LOGIC_VECTOR (6 downto 0));
 	end component;
-	component DFlop3bit is --d flip flop with a 4-bit input
+	component DFlop4bit is --d flip flop with a 4-bit input
 	 Port ( clk : in std_logic;
 			  reset : in std_logic;
 			  en : in std_logic;
@@ -135,97 +135,97 @@ SSegDisplay: seven_segment_display port map (
                LED => LEDSegment );
 
 --each flip flop represents one of the sixteen beats stored by the synth
-DFlop0 : DFlop3bit port map (
+DFlop0 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(0),
 	d => DInp,
 	q => QOut(0));
-DFlop1 : DFlop3bit port map (
+DFlop1 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(1),
 	d => DInp,
 	q => QOut(1));
-DFlop2 : DFlop3bit port map (
+DFlop2 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(2),
 	d => DInp,
 	q => QOut(2));
-DFlop3 : DFlop3bit port map (
+DFlop3 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(3),
 	d => DInp,
 	q => QOut(3));
-DFlop4 : DFlop3bit port map (
+DFlop4 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(4),
 	d => DInp,
 	q => QOut(4));
-DFlop5 : DFlop3bit port map (
+DFlop5 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(5),
 	d => DInp,
 	q => QOut(5));
-DFlop6 : DFlop3bit port map (
+DFlop6 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(6),
 	d => DInp,
 	q => QOut(6));
-DFlop7 : DFlop3bit port map (
+DFlop7 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(7),
 	d => DInp,
 	q => QOut(7));
-DFlop8 : DFlop3bit port map (
+DFlop8 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(8),
 	d => DInp,
 	q => QOut(8));
-DFlop9 : DFlop3bit port map (
+DFlop9 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(9),
 	d => DInp,
 	q => QOut(9));
-DFlop10 : DFlop3bit port map (
+DFlop10 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(10),
 	d => DInp,
 	q => QOut(10));
-DFlop11 : DFlop3bit port map (
+DFlop11 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(11),
 	d => DInp,
 	q => QOut(11));
-DFlop12 : DFlop3bit port map (
+DFlop12 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(12),
 	d => DInp,
 	q => QOut(12));
-DFlop13 : DFlop3bit port map (
+DFlop13 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(13),
 	d => DInp,
 	q => QOut(13));
-DFlop14 : DFlop3bit port map (
+DFlop14 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(14),
 	d => DInp,
 	q => QOut(14));
-DFlop15 : DFlop3bit port map (
+DFlop15 : DFlop4bit port map (
 	clk => Clk,
 	reset => Reset,
 	en => DEnab(15),
