@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
--- Design Name: DFlop3Bit
--- Description: D flip-flop which stores 3-bits
+-- Design Name: DFlop4Bit
+-- Description: D flip-flop which stores 4-bits
 ----------------------------------------------------------------------------------
 
 library IEEE;
@@ -22,7 +22,7 @@ begin
    process (clk, reset, en) is
    begin
 	 if (reset = '1') then
-		 q <= "0000"; --reset output to 000 on reset
+		 q <= "0000"; --reset output to 0000 on reset
     elsif (rising_edge(clk)) then
 		if (en = '1') then
         q <= d; --update output when enable is true
